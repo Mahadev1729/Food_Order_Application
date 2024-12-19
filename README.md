@@ -87,4 +87,5 @@ complete the theory
 3 - e2e testing
 
 ## setting up test
-  -- installed the 
+  -- installed the testting Library
+  -- 
