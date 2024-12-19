@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/Mahadev1729/Food_Order_Application",
   "devDependencies": {
+    "@babel/preset-env": "^7.26.0",
     "@parcel/optimizer-swc": "^2.13.3",
     "@testing-library/dom": "^10.4.0",
     "@testing-library/react": "^16.1.0",
