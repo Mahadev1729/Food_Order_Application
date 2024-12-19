@@ -86,5 +86,5 @@ complete the theory
 2 - Intgration testing
 3 - e2e testing
 
-##setting up test
-
+## setting up test
+  -- installed the 
