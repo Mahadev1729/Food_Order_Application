@@ -91,7 +91,7 @@ complete the theory
   -- installed jest
   -- installed Babel dependencies
   -- configure Bable
-  -- Configure Parcel Config file to disable default bable traspillation
+  -- Configure Parcel Config file to disable default bable   traspillation
 
 
 
