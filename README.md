@@ -93,5 +93,5 @@ complete the theory
   -- configure Bable
   -- Configure Parcel Config file to disable default bable traspillation
 
-https://food-order-application-tgam.vercel.app/
+
 
