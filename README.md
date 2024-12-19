@@ -88,4 +88,10 @@ complete the theory
 
 ## setting up test
   -- installed the testting Library
-  -- 
+  -- installed jest
+  -- installed Babel dependencies
+  -- configure Bable
+  -- Configure Parcel Config file to disable default bable traspillation
+
+https://food-order-application-tgam.vercel.app/
+
