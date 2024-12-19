@@ -9,6 +9,9 @@ import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import "/index.css";
 import { lazy, Suspense, useEffect, useState } from "react";
 import UserContext from "./utils/UserContext";
+import { Provider } from "react-redux";
+import store from "./Redux/store";
+import Cart from "./components/Cart";
 
 //app chunking
 //code splitting
@@ -22,7 +25,7 @@ const About = lazy(() => import("./components/About"));
 const AppLayout = () => {
   ///authentiaction code/logic
 
-const [userName, setUserName] = useState(); //passed userName
+  const [userName, setUserName] = useState(); //passed userName
   // const [userId, setUserId] = useState();
   useEffect(() => {
     //make an api call and send username and password
@@ -31,16 +34,18 @@ const [userName, setUserName] = useState(); //passed userName
       id: 8977,
     };
     setUserName(data.name);
-   
+
   }, []);
   return (
     /**Providing value to whole app */
-    <UserContext.Provider value={{ loggedInUser: userName, setUserName }}>
-      <div className="app">
-        <Header />
-        <Outlet />
-      </div>
-    </UserContext.Provider>
+    <Provider store={store}>
+      <UserContext.Provider value={{ loggedInUser: userName, setUserName }}>
+        <div className="app">
+          <Header />
+          <Outlet />
+        </div>
+      </UserContext.Provider>
+    </Provider>
   );
 };
 
@@ -76,6 +81,10 @@ const appRouter = createBrowserRouter([
       {
         path: "/restaurant/:resId",
         element: <RestaurantMenu />,
+      },
+      {
+        path: '/cart',
+        element: <Cart />,
       },
     ],
     errorElement: <Error />,

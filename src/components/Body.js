@@ -36,7 +36,7 @@ const Body = () => {
     );
 
     const json = await data.json();
-    console.log(data);
+    // console.log(data);
     
     
     const restaurants =

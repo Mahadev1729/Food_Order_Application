@@ -65,4 +65,24 @@ context-
 Redux start(Episode 12)
 redux and react are different libries
 
-hjhdfjnjkfjnjfn
+Redux Toolkit Architecture:
+# for modification the slice of redux store
+  =>when you click add button it dispatch and action after that
+   it called reducer function to modify the slice of the redux store
+
+complete the theory
+
+#Redux Toolkit:
+  1- install libries{redux Toolkit}
+  2- Build our store
+  3-connect our store to the App
+  4-create card slice
+  5-selector
+  
+  {speak while code}
+
+## Types of testing (developer)
+1 - Unit testing
+2 - Intgration testing
+3 - e2e testing
+

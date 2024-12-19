@@ -5,11 +5,21 @@
  * list of items with their name, price, description, and image. Each item is displayed in a styled
  * container with an image and an "Add +" button.
  */
+import { useDispatch } from "react-redux";
 import { CDN_URL } from "../utils/constants";
+import { addItem } from "../Redux/cartSlice";
 
 const ItemList = ({ items }) => {
   // console.log(items);
 
+  const dispatch = useDispatch()//hook
+
+  const handleAddItem = (item) => {
+    // console.log("item added");
+    dispatch(addItem(item));
+
+
+  }
 
   return (
     <div>
@@ -18,7 +28,7 @@ const ItemList = ({ items }) => {
           key={item.card.info.id}
           className="p-4 m-2 border-gray-200 border-b-2 flex items-center"
         >
-          
+
           <div className="flex-1 pr-4 text-left">
             <div className="py-2">
               <span className="font-semibold">{item.card.info.name}</span>
@@ -34,16 +44,17 @@ const ItemList = ({ items }) => {
             </p>
           </div>
 
-          
+
           <div className="w-24 h-24 flex-shrink-0 relative">
             <img
               src={`${CDN_URL}${item?.card?.info?.imageId}`}
-              
+
               className="w-full h-full object-cover rounded-lg"
             />
-            <button className="absolute bottom-1 right-1 p-1 bg-white shadow-lg rounded-md text-xs">
+            <button onClick={()=>handleAddItem(item)} className="absolute bottom-1 right-1 p-1 bg-white shadow-lg rounded-md text-xs">
               Add +
             </button>
+            
           </div>
         </div>
       ))}
