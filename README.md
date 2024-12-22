@@ -101,3 +101,5 @@ complete the theory
   --- npm install --save-dev jest-environment-jsdom
 
 try to write test case from React 
+
+--- Install @babel/preset-react
