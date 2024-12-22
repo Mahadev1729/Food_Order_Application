@@ -92,6 +92,11 @@ complete the theory
   -- installed Babel dependencies
   -- configure Bable
   -- Configure Parcel Config file to disable default bable   traspillation
-
-
+  -- npm run test ## run command to run test case
+  # write to test case
+  -- npx jest --init
+  select jsdom
+  -- select bable
+  set
+  --- npm install --save-dev jest-environment-jsdom
 
