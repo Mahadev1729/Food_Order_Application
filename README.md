@@ -100,3 +100,4 @@ complete the theory
   set
   --- npm install --save-dev jest-environment-jsdom
 
+try to write test case from React 

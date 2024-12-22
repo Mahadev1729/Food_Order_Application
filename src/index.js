@@ -4,7 +4,8 @@ import Body from "./components/Body";
 import Contact from "./components/Contact";
 import Error from "./components/Error";
 import RestaurantMenu from "./components/RestaurantMenu";
-import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
+import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom"
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "/index.css";
 import { lazy, Suspense, useEffect, useState } from "react";
 import UserContext from "./utils/UserContext";
