@@ -38,14 +38,15 @@
   },
   "dependencies": {
     "@reduxjs/toolkit": "^2.5.0",
+    "punycode": "^2.3.1",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-redux": "^9.2.0",
     "react-router": "^6.28.1",
     "react-router-dom": "^6.28.1"
   },
-  "jest":{
-    "testEnvironment":"jsdom"
+  "jest": {
+    "testEnvironment": "jsdom"
   },
   "browserlists": [
     "last 2 versions"

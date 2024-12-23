@@ -10,3 +10,10 @@ test("should load contact component", () => {
     const heading = screen.getByRole("heading");
     expect(heading).toBeInTheDocument();
 });
+test("should load contact component", () => {
+    render(<Contact />);
+
+
+    const button = screen.getByRole("button");
+    expect(button).toBeInTheDocument();
+});

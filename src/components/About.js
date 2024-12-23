@@ -8,7 +8,7 @@ const About = () => {
   return (
     <div className="min-h-screen bg-gradient-to-r from-green-50 via-white to-green-50 py-10 px-6">
       <div className="max-w-5xl mx-auto bg-white shadow-2xl rounded-2xl p-10">
-        {/* Title Section */}
+      
         <h1 className="text-4xl font-extrabold text-green-600 mb-6 text-center">
           About Us
         </h1>
@@ -17,7 +17,7 @@ const About = () => {
           where your cravings meet convenience. Discover and order your favorite meals with ease and enjoy a seamless dining experience.
         </p>
 
-        {/* Features Section */}
+    
         <div className="mb-10">
           <h2 className="text-3xl font-bold text-gray-800 mb-4 text-center">
             Why Choose Us?
@@ -47,14 +47,7 @@ const About = () => {
                 Enjoy discounts and offers available only for our loyal users.
               </p>
             </div>
-            <div className="bg-green-50 p-6 rounded-lg shadow-sm">
-              <h3 className="text-xl font-semibold text-green-800 mb-2">
-                Secure Payments
-              </h3>
-              <p className="text-gray-600">
-                Pay with confidence using our secure and hassle-free payment methods.
-              </p>
-            </div>
+            
           </div>
         </div>
 
