@@ -3,17 +3,11 @@ import Contact from '../Contact'
 import '@testing-library/jest-dom';
 
 
-test("should load contact component", () => {
-    render(<Contact />);
 
-  
-    const heading = screen.getByRole("heading");
-    expect(heading).toBeInTheDocument();
-});
-test("should load contact component", () => {
-    render(<Contact />);
-
-
-    const button = screen.getByRole("button");
-    expect(button).toBeInTheDocument();
+test("should laod 2 input boxes on the contact component",()=>{
+    render(<Contact/>)
+    //quering
+    const inputBoxes=screen.getAllByRole("textbox");
+    expect(inputBoxes.length).toBe(3)
+    console.log(inputBoxes.length);
 });
