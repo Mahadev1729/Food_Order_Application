@@ -98,9 +98,11 @@ complete the theory
   -- npx jest --init
   select jsdom
   -- select bable
-  set
+  
   --- npm install --save-dev jest-environment-jsdom
 
 try to write test case from React 
 
 --- Install @babel/preset-react
+
+--- we can replace test word with it
