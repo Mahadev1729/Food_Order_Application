@@ -6,8 +6,8 @@ import { clearItem } from "../Redux/cartSlice";
 const Cart = () => {
 
     const cartItems = useSelector((store) => store.cart.items);
-    const dispatch=useDispatch();
-    const handleClearCart=()=>{
+    const dispatch = useDispatch();
+    const handleClearCart = () => {
         dispatch(clearItem());
     }
 
@@ -17,7 +17,7 @@ const Cart = () => {
             <div className="w-6/12 m-auto p-4 bg-white rounded-lg shadow-md">
                 <div className="divide-y divide-gray-200">
                     <button className="p-2 m-2 bg-black text-white" onClick={handleClearCart} >Clear Cart</button>
-                    {cartItems.length==0 && <h1>Cart is empty </h1>}
+                    {cartItems.length == 0 && <h1>Cart is empty </h1>}
                     <ItemList items={cartItems} />
                 </div>
             </div>
@@ -26,4 +26,3 @@ const Cart = () => {
 }
 
 export default Cart;
-
