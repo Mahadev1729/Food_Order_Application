@@ -1,4 +1,4 @@
-import { render, screen } from "@testing-library/react"
+import { fireEvent, render, screen } from "@testing-library/react"
 import Header from "../Header"
 import { Provider } from "react-redux";
 import store from "../../Redux/store";
@@ -27,6 +27,20 @@ it("Should head heave logout button",()=>{
           </Provider>
         </BrowserRouter>
     )
-    const logoutBtn=screen.getAllByText('Logout');
+    const logoutBtn=screen.getAllByText(/Logout/);
+    expect(logoutBtn).toBeInTheDocument();
+})
+
+it("Should change login btn to logout button", () => {
+    render(
+        <BrowserRouter>
+            <Provider store={store}>
+                <Header />
+            </Provider>
+        </BrowserRouter>
+    )
+    loginBtn=screen.getByRole('button',{name:'Login'})
+    fireEvent.click(loginBtn);
+    logoutBtn=screen.getByRole('button',{name:'Logout'});
     expect(logoutBtn).toBeInTheDocument();
 })
