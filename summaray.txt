@@ -106,3 +106,4 @@ try to write test case from React
 --- Install @babel/preset-react
 
 --- we can replace test word with it
+--- every render,testcase must be isolated
