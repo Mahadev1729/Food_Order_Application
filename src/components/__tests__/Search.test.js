@@ -25,11 +25,12 @@ it("should render the body component with search button", async() => {
     const serachInput=screen.getByTestId(serachInput);
     fireEvent.change(serachInput,{
         target:{
-            value:"burger"
+            value:"Pizza"
         }
     })
     fireEvent.click(serachbtn);
     //screen should load four cards
-    expect(serachbtn).toBeInTheDocument();
+    const cards=screen.getAllByTestId("resCard");
+    expect(cards.length).toBe(2);
     
 });
